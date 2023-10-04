@@ -1,0 +1,65 @@
+<html>
+<head>
+<title>Project 0</title>
+<style>
+    .anc {
+        color: orange;
+        opacity: 5;
+        text-decoration: none;
+        font-size: x-large;
+    }
+    .anc:hover {
+        color: #fff;
+        background-color: blue;
+    }
+</style>
+<link rel="stylesheet" href="CSSLoginPage.css">
+</head>
+<body>
+<div class="container"> 
+    <img class="Profile" src="user.jpg">
+    <h2>Login for Project 0</h2>
+    <form>
+        <input type="text" placeholder="Username" required/>
+        <input type="password" placeholder="Password" required/>
+        <input type="submit" value="Login" onclick="redirectToYouTube()"><!-- Added an onclick event -->
+        <div class="registerlink">
+            or      
+        </div>
+              
+        <input type="submit" value="Register" onclick="redirectToRegistration()">
+
+      
+        <div class="surprise">
+            Click "Login" without credentials for a surprise!     
+        </div>
+        
+    </form>
+</div>
+
+<script>
+    function redirectToYouTube() {
+        var username = document.querySelector('input[type="text"]').value;
+        var password = document.querySelector('input[type="password"]').value;
+
+        // Check if both fields are empty
+        if (username === "" && password === "") {
+            // Redirect to YouTube if both fields are empty
+            window.location.href = 'https://www.youtube.com/watch?v=xvFZjo5PgG0';
+        } else {
+            // Perform the login action 
+            alert("Logged in successfully!");
+            
+        }
+    }
+</script>
+
+<script>
+    function redirectToRegistration() {
+        window.location.href = 'Registration.html';
+    }
+</script>
+
+
+</body>
+</html>

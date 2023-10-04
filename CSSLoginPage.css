@@ -1,0 +1,114 @@
+body
+{
+	background-image:url("purple.jpg");
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:cover;
+	margin:0;
+	padding:0;
+}
+
+.container
+{
+	background-color:pink;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	width:300px;
+	height:400px;
+	background:rgba(0,0,0,0.5);
+	border-radius:30px;
+	padding:80px 20px;
+	color:#fff;
+}
+
+.profile
+{
+	width:100px;
+	height:100px;
+	border-radius:50%;
+	position:absolute;
+	top:calc(-100px/2);
+	left:calc(50% - 50px);
+	
+}
+
+.registerlink {
+    color:#FFFFFF;
+    margin-top: 10px;
+    text-align: center;
+    /*
+    border: 2px solid #FFFFFF;
+    padding: 10px; 
+    border-radius: 10px; 
+    outline:none;
+    */
+}
+.anc {
+color:#FFFFFF;
+font-size:20px;
+outline:none;
+}
+.surprise {
+    color:#FFFFFF;
+    margin-top: 60px;
+    text-align: center;
+    /*
+    border: 2px solid #FFFFFF;
+    padding: 10px; 
+    border-radius: 10px; 
+    outline:none;
+    */
+}
+.registerlink h4
+{
+	text-align:center;
+	color: #FFFFFF;
+	
+	
+}
+a {
+    color: #fff;
+}
+h2
+{
+	text-align:center
+}
+
+input[type="text"],input[type="password"]
+{
+    width:250px;
+	box-sizing:border-box;
+	padding:10px 10px;
+	background:rgba(0,0,0,0.10);
+	border:none;
+	outline:none;
+	border-bottom:1px dotted #fff;
+	color:#fff;
+	border-radius:5px;
+	margin:10px;
+		font-weight:bold;
+}
+
+input[type="submit"]
+{
+    box-sizing:border-box;
+	width:250px;
+	padding:10px 0;
+	margin-top:20px;
+	margin-left:20px;
+	background-color:violet;
+	font-weight:bold;
+	border-radius:20px;
+	border:none;
+	outline:none;
+	cursor:pointer;	
+}
+
+input[type="submit"]:hover
+{
+	color:#fff;
+	background-color:green;
+	
+}
